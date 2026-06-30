@@ -1,4 +1,4 @@
-# n8n Restaurant Guide Workflow
+# n8n Restaurant Support Workflow
 
 ## Executive Summary  
 This document provides a thorough developer-oriented handover of the **Restaurant Guide** n8n workflow. It details the architecture, data flows, and each node’s function within the workflow, covering onboarding, intent detection, personalization, and restaurant recommendation via Swiggy/Zomato/Restaurant menu. We include diagrams (workflow execution, intent routing, ER diagram), node-by-node documentation, AI prompt engineering notes, database schemas, error handling strategies, and deployment considerations. We highlight business logic (e.g. onboarding steps, intent categories) and suggest improvements, referencing official sources for n8n, Gemini, and PostgreSQL.
