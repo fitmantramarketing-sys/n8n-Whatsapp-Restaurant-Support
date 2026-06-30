@@ -5,6 +5,8 @@ This document provides a thorough developer-oriented handover of the **Restauran
 
 ## Instruction
 - If users are getting **'I'm having a quick technical issue, please try again in a minute'** message on whatsapp, then most probably gemini models are currently facing high down time. In this case try to change gemini model in gemini-HTTP nodes(image analysis, pdf analysis and swiggy flow)
+
+- This flow also handles *Zoconut appointment reminder flow's reschedule request* and *Zoho Book Whatsapp Payment Reminder* flow's button replies(I've Paid, I'll Pay Today, Need Help)
 ## Table of Contents  
 - [Workflow Overview](#workflow-overview)  
 - [Architecture and Data Flow](#architecture-and-data-flow)  
