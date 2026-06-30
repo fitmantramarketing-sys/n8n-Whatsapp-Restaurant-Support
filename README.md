@@ -3,6 +3,8 @@
 ## Executive Summary  
 This document provides a thorough developer-oriented handover of the **Restaurant Guide** n8n workflow. It details the architecture, data flows, and each node’s function within the workflow, covering onboarding, intent detection, personalization, and restaurant recommendation via Swiggy/Zomato/Restaurant menu. We include diagrams (workflow execution, intent routing, ER diagram), node-by-node documentation, AI prompt engineering notes, database schemas, error handling strategies, and deployment considerations. We highlight business logic (e.g. onboarding steps, intent categories) and suggest improvements, referencing official sources for n8n, Gemini, and PostgreSQL.
 
+## Instruction
+- If users are getting **'We are facing a technical error...'** message on whatsapp, then most probably gemini models are currently facing high down time. In this case try to change gemini model in gemini-HTTP nodes(image analysis, pdf analysis and swiggy flow)
 ## Table of Contents  
 - [Workflow Overview](#workflow-overview)  
 - [Architecture and Data Flow](#architecture-and-data-flow)  
