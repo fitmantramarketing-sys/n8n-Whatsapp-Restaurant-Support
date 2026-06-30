@@ -1,1 +1,0 @@
-# n8n-Whatsapp-Restaurant-Support
