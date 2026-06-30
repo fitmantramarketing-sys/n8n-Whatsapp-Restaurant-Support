@@ -6,7 +6,10 @@ This document provides a thorough developer-oriented handover of the **Restauran
 ## Instruction
 - If users are getting **'I'm having a quick technical issue, please try again in a minute'** message on whatsapp, then most probably gemini models are currently facing high down time. In this case try to change gemini model in gemini-HTTP nodes(image analysis, pdf analysis and swiggy flow)
 
-- This flow also handles *Zoconut appointment reminder flow's reschedule request* and *Zoho Book Whatsapp Payment Reminder* flow's button replies(I've Paid, I'll Pay Today, Need Help)
+- This flow also handles ***Zoconut appointment reminder flow's reschedule request*** and ***Zoho Book Whatsapp Payment Reminder*** flow's button replies(**I've Paid | I'll Pay Today | Need Help**)
+
+- Within n8n, only one webhook can be used to receive WhatsApp messages for a given phone number. For example, the ChatSpire number (+91 9875164599) is already connected to a webhook in the Restaurant Guide flow. If another webhook is configured in a different flow to receive messages from the same number, the existing webhook will be deactivated automatically. In other words, only one active webhook can receive incoming WhatsApp messages for the same phone number at any given time. However, we can use HTTP node to send messages from this number in any flow.
+
 ## Table of Contents  
 - [Workflow Overview](#workflow-overview)  
 - [Architecture and Data Flow](#architecture-and-data-flow)  
